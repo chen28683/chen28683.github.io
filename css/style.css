@@ -6,7 +6,7 @@ body:after {
   content: "";
   display: table;
 }
-body:after {:;
+body:after {
   clear: both;
 }
 @font-face {
@@ -242,6 +242,7 @@ a {
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   height: 100%;
+  overflow-y: scroll;
 }
 #container .left-col .overlay {
   width: 100%;
@@ -573,11 +574,7 @@ a {
 }
 #header .header-nav {
   width: 100%;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.3s ease-in;
-  -moz-transition: -moz-transform 0.3s ease-in;
-  -ms-transition: -ms-transform 0.3s ease-in;
-  transition: transform 0.3s ease-in;
+  height: auto;
 }
 #header .header-nav .social {
   margin-right: 15px;
