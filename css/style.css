@@ -6,7 +6,7 @@ body:after {
   content: "";
   display: table;
 }
-body:after {
+body:after {:;
   clear: both;
 }
 @font-face {
@@ -536,7 +536,7 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   float: none;
-  height: 150px;
+  height: auto;
   margin-left: -12px;
   text-align: center;
   display: -webkit-box;
