@@ -3,23 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>cmake学习 | doubi工作室</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2015/09/06/hello-world/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-09-06T14:40:44.000Z">
+<meta property="og:title" content="cmake学习">
+<meta property="og:url" content="http://doubimoneky.com/2015/09/08/cmake-learning/index.html">
+<meta property="og:site_name" content="doubi工作室">
+<meta property="og:description">
+<meta property="og:updated_time" content="2015-09-08T15:33:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="cmake学习">
+<meta name="twitter:description">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="doubi工作室" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -34,14 +31,16 @@ Quick">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img lazy-src="null" class="js-avatar">
+			<img lazy-src="http://g.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=c474be761b178a82ce6977a4c3335fbb/d0c8a786c9177f3e215bb8b775cf3bc79f3d5618.jpg" class="js-avatar">
 			
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">doubi monkey</a></h1>
 		</hgroup>
 
+		
+		<p class="header-subtitle">勇敢德向前方</p>
 		
 
 		
@@ -92,16 +91,24 @@ Quick">
 					<nav class="header-menu">
 						<ul>
 						
-							<li><a href="/">主页</a></li>
+							<li><a href="/categories/resume">简历</a></li>
 				        
-							<li><a href="/archives">所有文章</a></li>
+							<li><a href="/archives">All</a></li>
+				        
+							<li><a href="/categories/cienet">java</a></li>
+				        
+							<li><a href="/categories/samsung">c/c++</a></li>
+				        
+							<li><a href="/categories/data">数据挖掘</a></li>
+				        
+							<li><a href="/categories/nlp">自然语言处理</a></li>
 				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
 						<div class="social">
 							
-								<a class="github" target="_blank" href="/#" title="github">github</a>
+								<a class="github" target="_blank" href="https://github.com/chen28683" title="github">github</a>
 					        
 								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
 					        
@@ -116,7 +123,7 @@ Quick">
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						
+						<a href="/tags/blackberry/" style="font-size: 10px;">blackberry</a> <a href="/tags/c-c/" style="font-size: 10px;">c/c++</a> <a href="/tags/cienet/" style="font-size: 10px;">cienet</a> <a href="/tags/cmake/" style="font-size: 10px;">cmake</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/samsung/" style="font-size: 10px;">samsung</a> <a href="/tags/scm/" style="font-size: 10px;">scm</a>
 					</div>
 				</section>
 				
@@ -129,14 +136,6 @@ Quick">
 			        
 			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
 			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
-			        
 			        </div>
 				</section>
 				
@@ -145,7 +144,7 @@ Quick">
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+					<div id="js-aboutme">自灯明，法灯明</div>
 				</section>
 				
 			</div>
@@ -157,23 +156,33 @@ Quick">
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">John Doe</h1>
+  		<h1 class="header-author js-mobile-header hide">doubi monkey</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img lazy-src="null" class="js-avatar">
+				<img lazy-src="http://g.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=c474be761b178a82ce6977a4c3335fbb/d0c8a786c9177f3e215bb8b775cf3bc79f3d5618.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author">John Doe</h1>
+			  <h1 class="header-author">doubi monkey</h1>
 			</hgroup>
+			
+			<p class="header-subtitle">勇敢德向前方</p>
 			
 			<nav class="header-menu">
 				<ul>
 				
-					<li><a href="/">主页</a></li>
+					<li><a href="/categories/resume">简历</a></li>
 		        
-					<li><a href="/archives">所有文章</a></li>
+					<li><a href="/archives">All</a></li>
+		        
+					<li><a href="/categories/cienet">java</a></li>
+		        
+					<li><a href="/categories/samsung">c/c++</a></li>
+		        
+					<li><a href="/categories/data">数据挖掘</a></li>
+		        
+					<li><a href="/categories/nlp">自然语言处理</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -181,7 +190,7 @@ Quick">
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="/#" title="github">github</a>
+						<a class="github" target="_blank" href="https://github.com/chen28683" title="github">github</a>
 			        
 						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
 			        
@@ -194,11 +203,11 @@ Quick">
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-cmake-learning" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/09/06/hello-world/" class="article-date">
-  	<time datetime="2015-09-06T14:40:44.000Z" itemprop="datePublished">2015-09-06</time>
+      <a href="/2015/09/08/cmake-learning/" class="article-date">
+  	<time datetime="2015-09-08T15:31:37.000Z" itemprop="datePublished">2015-09-08</time>
 </a>
     </div>
   
@@ -211,7 +220,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      cmake学习
     </h1>
   
 
@@ -219,7 +228,15 @@ Quick">
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c-c/">c/c++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cmake/">cmake</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/samsung/">samsung</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scm/">scm</a></li></ul>
+	</div>
+
         
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/samsung/">samsung</a>
+	</div>
+
 
         <div class="clearfix"></div>
       </div>
@@ -227,22 +244,32 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        
       
     </div>
     
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2015/09/08/resume/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          resume
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/09/08/first_work/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一份工作经历</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -266,11 +293,11 @@ Quick">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="http://yoursite.com/2015/09/06/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="cmake-learning" data-title="cmake学习" data-url="http://doubimoneky.com/2015/09/08/cmake-learning/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
+	var duoshuoQuery = {short_name:"ef9ee79d51c4767f24e9c8c8a49d08e9"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
@@ -291,7 +318,7 @@ Quick">
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2015 John Doe
+    		&copy; 2015 doubi monkey
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
