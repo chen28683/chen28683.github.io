@@ -122,7 +122,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/blackberry/" style="font-size: 10px;">blackberry</a> <a href="/tags/c-c/" style="font-size: 10px;">c/c++</a> <a href="/tags/cienet/" style="font-size: 10px;">cienet</a> <a href="/tags/cmake/" style="font-size: 10px;">cmake</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/samsung/" style="font-size: 10px;">samsung</a> <a href="/tags/scm/" style="font-size: 10px;">scm</a>
+						<a href="/tags/blackberry/" style="font-size: 10px;">blackberry</a> <a href="/tags/c-c/" style="font-size: 10px;">c/c++</a> <a href="/tags/cienet/" style="font-size: 10px;">cienet</a> <a href="/tags/cmake/" style="font-size: 10px;">cmake</a> <a href="/tags/cocos2dx/" style="font-size: 10px;">cocos2dx</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/nlp/" style="font-size: 10px;">nlp</a> <a href="/tags/samsung/" style="font-size: 10px;">samsung</a> <a href="/tags/scm/" style="font-size: 10px;">scm</a>
 					</div>
 				</section>
 				
@@ -203,6 +203,81 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-cocos1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/15/cocos1/" class="article-date">
+  	<time datetime="2015-09-15T08:51:17.000Z" itemprop="datePublished">2015-09-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/15/cocos1/">cocos2dx-js学习（一）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#cocos2d-x-JS 使用心得(一)  </p>
+<p>##使用安装</p>
+<h3 id="Cocos2d-html5下载">Cocos2d-html5下载</h3><p>下载地址：<a href="http://www.cocos2d-x.org/download" target="_blank" rel="external">http://www.cocos2d-x.org/download</a> </p>
+<ul>
+<li>3.7之前js和c++lua版本是分开的，3.7开始合并在一起了。下载的同学注意一下这个问题～</li>
+<li>安装python<br>进入下载目录 ，执行</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">python</span> ./setup.<span class="keyword">py</span></span><br><span class="line">$ <span class="keyword">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<h3 id="IDE">IDE</h3><p>目前开发cocos－js版本，主要是两款ide，一款式webstorm，配置一下就可以使用。另一款是cocos官方提供的cocos IDE。1。0是基于eclipse开发的，2.0是基于intelli idea开发的。</p>
+<p>同时场景和材质编辑器的话使用cocos studio。<br><a href="http://www.cocos.com/download/#" target="_blank" rel="external">下载地址</a></p>
+<p>用cocos studio编辑出来的材质保存成json格式，就可以在代码里调用了，具体调用方式见官网链接<a href="http://www.cocos.com/doc/tutorial/show?id=2817" target="_blank" rel="external">Cocos2d-JS中使用Cocos Studio资源</a></p>
+<h3 id="Create_a_new_project">Create a new project</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// <span class="operator"><span class="keyword">Create</span> a <span class="keyword">project</span> containing Cocos2d-x JSB <span class="keyword">and</span> Cocos2d-html5:</span><br><span class="line">$	cocos <span class="keyword">new</span> -<span class="keyword">l</span> js</span><br><span class="line">// <span class="keyword">Create</span> a <span class="keyword">project</span> <span class="keyword">only</span> containing Cocos2d-html5:</span><br><span class="line">$	cocos <span class="keyword">new</span> -<span class="keyword">l</span> js <span class="comment">--no-native</span></span><br><span class="line"></span><br><span class="line">// <span class="keyword">Create</span> a <span class="keyword">project</span> <span class="keyword">with</span> a specified <span class="keyword">name</span> <span class="keyword">in</span> a specified <span class="keyword">directory</span>:</span><br><span class="line">$	cocos <span class="keyword">new</span> projectName -<span class="keyword">l</span> js -<span class="keyword">d</span> ./Projects</span></span><br></pre></td></tr></table></figure>
+<h3 id="Run_the_project">Run the project</h3><ul>
+<li><p>To run your Cocos2d-JS project with a web server use:</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~/work/MyJSGame</span><br><span class="line">cocos <span class="keyword">run</span> -p web</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>To compile and run your project in Cocos2d-x JSB:</p>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~/work/MyJSGame</span><br><span class="line">cocos compile -p ios|<span class="string">android</span>|mac</span><br><span class="line">cocos run -p ios|<span class="string">android</span>|mac</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Useful options:</span><br><span class="line">&gt; -p <span class="built_in">platform</span> : The <span class="built_in">platform</span> can be ios|mac|android|web.</span><br><span class="line">&gt; -s source   : Your project <span class="built_in">directory</span>, <span class="keyword">if</span> <span class="operator">not</span> specified <span class="operator">the</span> current <span class="built_in">directory</span> will be used.</span><br><span class="line">&gt; -q          : Quiet mode, removes <span class="built_in">log</span> messages.</span><br><span class="line">&gt; -m mode     : Mode debug <span class="operator">or</span> release, debug is default</span><br><span class="line">&gt; <span class="comment">--source-map: General source-map file. (Web platform only)</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cocos2dx/">cocos2dx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
